@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mt-5 mb-3 row">
+            <label for="cep" class="col-sm-2 col-form-label">CEP</label>
+            <div class="col-sm">
+              <input type="text" class="form-control" id="cep" value="">
+            </div>
+            <div class="col-4">
+                <button type="button" onclick="getAddressByCep()" class="btn btn-success w-100">Ok</button>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="rua" class="col-sm-2 col-form-label">Rua</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control" id="rua">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control" id="bairro">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control" id="cidade">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="uf" class="col-sm-2 col-form-label">UF</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control" id="uf">
+            </div>
+          </div>
+          <div class="mt-5 mb-3 row">
+            <label for="latitude" class="col-sm-2 col-form-label">Latitude</label>
+            <div class="col-sm">
+              <input type="text" class="form-control" id="latitude" value="">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="longitude" class="col-sm-2 col-form-label">Longitude</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="longitude">
+            </div>
+          </div>
+          <div>
+            <button type="button" onclick="getPrevisao()" class="btn btn-success w-100">Ok</button>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <div id="resposta">
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- -46.838355616324044       -23.515085837631524   -->
